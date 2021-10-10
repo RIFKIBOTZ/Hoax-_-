@@ -4,14 +4,14 @@ __path = process.cwd()
 var express = require('express');
 var db = require(__path + '/database/db');
 try {
-var kuhong = db.get('ojan'); // jan diubah
+var kuhong = db.get('RIFKI-BOTX'); // jan diubah
 } catch (e) {
-	console.log('WELCOME TO GX API!') // boleh diubah
+	console.log('WELCOME TO RIFKI BOTX') // boleh diubah
 }
 
-var creatorList = ['Eka Gans']; // Nama Lu Ngab
+var creatorList = ['RIFKI BOTX']; // Nama Lu Ngab
 var creator = creatorList[Math.floor(Math.random() * creatorList.length)]; // Ini jan diubah
-var key = 'EkakeY' // Apikey Lu Ngab
+var key = 'RIFKIBOTXKEY' // Apikey Lu Ngab
 
 // Required Modules :
 var ffmpeg = require('fluent-ffmpeg');
@@ -174,7 +174,7 @@ loghandler = {
         status: false,
         creator: `${creator}`,
         code: 406,
-        message: `Apikey tidak ditemukan! Silahkan kontak Owner untuk dapatkan Apikey wa.me/62895337278647`
+        message: `Apikey tidak ditemukan! Silahkan kontak Owner untuk dapatkan Apikey wa.me/6285721599053`
     },
     invalidLink: {
         status: false,
@@ -235,7 +235,7 @@ var invalidKey = __path + '/views/invalidKey.html' // Apikey Invalid
             randomlagi += arr[Math.floor(Math.random() * arr.length)];
         }
 
-        var randomTextNumber = random+randomlagi+'---------kuhong-api-storage'+'ojan';
+        var randomTextNumber = random+randomlagi+'---------kuhong-api-storage'+'RIFKI BOTX';
 
 
 router.get('/cekapikey', async (req, res, next) => {
@@ -1165,7 +1165,7 @@ router.get('/flaming', async (req, res, next) => {
 
   try {
          var json = await (await fetch(`http://zekais-api.herokuapp.com/photooxy/flaming?text=${text}`)).json()
-	 var buffer = await (await fetch(`https://api.imgbb.com/1/upload?expiration=120&key=761ea2d5575581057a799d14e9c78e28&image=${json.result}&name=ojan`)).json()
+	 var buffer = await (await fetch(`https://api.imgbb.com/1/upload?expiration=120&key=761ea2d5575581057a799d14e9c78e28&image=${json.result}&name=RIFKI BOTX`)).json()
 	   await fs.writeFileSync(__path + '/tmp/flaming.png', await getBuffer(buffer.data.url))
 	  
 	res.sendFile(__path + '/tmp/flaming.png')
@@ -1185,7 +1185,7 @@ router.get('/neon', async (req, res, next) => {
 
   try {
          var json = await (await fetch(`http://zekais-api.herokuapp.com/photooxy/neon?text=${text}`)).json()
-	 var buffer = await (await fetch(`https://api.imgbb.com/1/upload?expiration=120&key=761ea2d5575581057a799d14e9c78e28&image=${json.result}&name=ojan`)).json()
+	 var buffer = await (await fetch(`https://api.imgbb.com/1/upload?expiration=120&key=761ea2d5575581057a799d14e9c78e28&image=${json.result}&name=RIFKI BOTX`)).json()
 	   await fs.writeFileSync(__path + '/tmp/neon.png', await getBuffer(buffer.data.url))
 	  
 	res.sendFile(__path + '/tmp/neon.png')
@@ -2057,7 +2057,7 @@ router.get('/kuis/caklontong', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                 result
              })
          })
@@ -2077,7 +2077,7 @@ router.get('/kuis/tebakgambar', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                 result
              })
          })
@@ -2099,7 +2099,7 @@ router.get('/news/cnn', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -2122,7 +2122,7 @@ router.get('/news/cnbc', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -2145,7 +2145,7 @@ router.get('/news/republika', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -2168,7 +2168,7 @@ router.get('/news/tempo', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -2191,7 +2191,7 @@ router.get('/news/antara', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -2212,7 +2212,7 @@ router.get('/news/kumparan', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -2235,7 +2235,7 @@ router.get('/filmapik/search', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -2258,7 +2258,7 @@ router.get('/filmapik/kategori', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -2281,7 +2281,7 @@ router.get('/filmapik/play', async (req, res, next) => {
         .then(data => {
         var result = data;
             res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -2302,7 +2302,7 @@ router.get('/filmapik/terbaru', async (req, res, next) => {
         .then(data => {
         var result = data;
             res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -2325,7 +2325,7 @@ router.get('/lk21/search', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -2347,7 +2347,7 @@ router.get('/playstore', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -2369,7 +2369,7 @@ router.get('/happymod', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -2391,7 +2391,7 @@ router.get('/Gsm', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -2413,7 +2413,7 @@ router.get('/sticker', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -2435,7 +2435,7 @@ router.get('/sticker/line', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -2457,7 +2457,7 @@ router.get('/sticker/telegram', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -2479,7 +2479,7 @@ router.get('/jadwal/tv', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -2501,7 +2501,7 @@ router.get('/iguser', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -2521,7 +2521,7 @@ router.get('/lk21/terbaru', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -2542,7 +2542,7 @@ router.get('/lk21/comingsoon', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                 result
              })
          })
@@ -2563,7 +2563,7 @@ router.get('/lk21/tvseries', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -2586,7 +2586,7 @@ router.get('/lk21/year', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -2609,7 +2609,7 @@ router.get('/lk21/country', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',                 result
+             	author: 'RIFKI BOTX',                 result
              })
          })
          .catch(e => {
@@ -2631,7 +2631,7 @@ router.get('/lk21/genre', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -2828,7 +2828,7 @@ router.get('/yutub/video', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -2851,7 +2851,7 @@ router.get('/yutub/audio', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -2874,7 +2874,7 @@ router.get('/ig/stalk', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
             })
          })
@@ -2896,7 +2896,7 @@ router.get('/comik', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
             })
          })
@@ -2918,7 +2918,7 @@ router.get('/dork', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
             })
          })
@@ -2940,7 +2940,7 @@ router.get('/pastebin', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
             })
          })
@@ -2962,7 +2962,7 @@ router.get('/maker', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -2985,7 +2985,7 @@ router.get('/maker2', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -3008,7 +3008,7 @@ router.get('/maker3', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -3031,7 +3031,7 @@ router.get('/maker4', async (rq, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -3054,7 +3054,7 @@ router.get('/maker3d', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -3077,7 +3077,7 @@ router.get('/maker3d/no2', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -3100,7 +3100,7 @@ router.get('/maker3d/no3', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -3123,7 +3123,7 @@ router.get('/maker3d/no4', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -3146,7 +3146,7 @@ router.get('/yutub/search', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                  result
              })
          })
@@ -3851,7 +3851,7 @@ router.get('/kuis/caklontong', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
-             	author: 'ojan',
+             	author: 'RIFKI BOTX',
                 result
              })
          })
